@@ -15,4 +15,10 @@ cd Exp\ on\ CIFAR/SVHN/STL
 CUDA_VISIBLE_DEVICES=0 python train.py --dataset cifar10 --model resnet --layers 32 --droprate 0.0 --no 0 --cos_lr --local_module_num 16  --local_loss_mode cross_entropy --aux_net_widen 1 --aux_net_feature_dim 128 --ixx_1 5 --ixy_1 0.5 --ixx_2 0   --ixy_2 0  --momentum 0.995
 ```
 
+**For ImageNet:**
+```
+cd Exp\ on\ ImageNet
+CUDA_VISIBLE_DEVICES=0 python imagenet_DDP.py  ./data/imagenet1K --arch resnetInfoPro_MAN --net resnet152 --local_module_num 4 --batch-size 128 --lr 0.05 --epochs 90 --workers 24 --gpu 0 --dist-url 'tcp://127.0.0.1:12345' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 --ixx_r 5 --ixy_r 0.75 --momentum_MAN 0.995
+```
+
 
