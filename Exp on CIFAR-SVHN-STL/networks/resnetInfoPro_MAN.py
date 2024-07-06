@@ -298,7 +298,6 @@ class InfoProResNet(nn.Module):
                 loss = self.criterion_ce(logits, target)
                 loss.backward()
                 local_index, layer_index = self.infopro_config[-1]
-                cur_layer = eval('self.layer' + str(local_index))[layer_index]
 
             return logits, loss
 
