@@ -5,7 +5,7 @@
 
 ![image](https://github.com/JunhaoSu0/MAN/assets/174414200/e99468a4-70d5-44b5-b565-75461e28d7ba)
 
-**This Figure shows detail of our MAN.***
+**This Figure shows detail of our MAN.**
 
 # To Train on Different Datasets
 
