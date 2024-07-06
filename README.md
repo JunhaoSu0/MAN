@@ -10,9 +10,9 @@
 # To Train on Different Datasets
 
 **For CIFAR-10/STL-10/SVHN:**
-'''
+```
 cd Exp\ on\ CIFAR/SVHN/STL
 CUDA_VISIBLE_DEVICES=0 python train.py --dataset cifar10 --model resnet --layers 32 --droprate 0.0 --no 0 --cos_lr --local_module_num 16  --local_loss_mode cross_entropy --aux_net_widen 1 --aux_net_feature_dim 128 --ixx_1 5 --ixy_1 0.5 --ixx_2 0   --ixy_2 0  --momentum 0.995
-'''
+```
 
 
