@@ -1,4 +1,4 @@
-# Momentum Auxiliary Network for Supervised Local Learning (ECCV2024)
+# Momentum Auxiliary Network for Supervised Local Learning (ECCV2024 Oral)
 ![image](https://github.com/JunhaoSu0/MAN/assets/174414200/deff0518-f88f-45f9-a743-8861067fb62a)
 **This Figure shows our overall arch.**
 
