@@ -26,5 +26,13 @@ cd Exp\ on\ ImageNet
 ```
 CUDA_VISIBLE_DEVICES=0 python imagenet_DDP.py  ./data/imagenet1K --arch resnetInfoPro_MAN --net resnet152 --local_module_num 2 --batch-size 128 --lr 0.05 --epochs 90 --workers 24 --gpu 0 --dist-url 'tcp://127.0.0.1:12345' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 --ixx_r 5 --ixy_r 0.75 --momentum_MAN 0.995
 ```
-
+# Citation
+```
+@article{su2024momentum,
+  title={Momentum Auxiliary Network for Supervised Local Learning},
+  author={Su, Junhao and Cai, Changpeng and Zhu, Feiyu and He, Chenghao and Xu, Xiaojie and Guan, Dongzhi and Si, Chenyang},
+  journal={arXiv preprint arXiv:2407.05623},
+  year={2024}
+}
+```
 
